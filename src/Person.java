@@ -38,6 +38,6 @@ public class Person {
   }
 
   public int getWordsSurname(){
-    return getSurname().split(" ").length;
+    return getSurname().split("\\P{IsAlphabetic}+").length;
   }
 }
